@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+
+  padding: 0;
+  margin: 0;
+}
+header,
+.ourServices {
+  position: relative;
+  background-image: url("assets/food.jfif");
+  background-size: cover;
+  color: white;
+}
+header .opacity {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+nav,
+.logo,
+p,
+h1,
+button {
+  position: relative;
+  z-index: 1;
+}
+nav {
+  display: flex;
+  padding: 20px 0;
+  margin: 0 2px;
+  border-bottom: 1px solid rgb(253, 5, 5);
+}
+.logo {
+  color: rgb(150, 4, 4);
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+nav ul li :last-of-type {
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover {
+  color: rgb(150, 4, 4);
+}
+
+section {
+  height: 300px;
+  padding: 50px;
+  text-align: center;
+}
+section h1 {
+  color: rgb(150, 4, 4);
+  font-size: 40px;
+}
+section p {
+  margin-top: 50px;
+  font-size: 30px;
+}
+section p::first-letter {
+  color: rgb(150, 4, 4);
+  font-size: 40px;
+  font-weight: bold;
+}
+section div button {
+  padding: 10px 20px;
+  border-color: rgb(150, 4, 4);
+  border-width: 1px;
+  box-shadow: 4px 2px 6px rgb(150, 4, 4);
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 40px;
+  color: white;
+  font-weight: bold;
+}
+section div button:hover {
+  transform: scale(1.1, 1.1);
+}
+.imgSection {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(240, 222, 222);
+  height: 365px;
+  border-width: 7px 0;
+  border-style: solid;
+  border-color: rgb(250, 2, 2);
+}
+.imgSection img:nth-of-type(1) {
+  margin-top: 20px;
+}
+.imgSection img,
+.ourStoryContainer {
+  height: 275px;
+  flex: 0 0 24%;
+  margin: 40px 20px;
+  box-shadow: 1px 1px 5px 1px black;
+}
+.ourStoryContainer {
+  position: relative;
+  border: 2px solid rgb(209, 245, 6);
+  box-shadow: 1px 1px 5px 1px rgb(94, 110, 2);
+}
+.ourStory {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 5%;
+  left: -5%;
+  width: 100%;
+  height: 100%;
+}
+.ourStory h2,
+.ourServices h2 {
+  padding: 20px;
+  font-family: "Lobster", cursive;
+}
+.ourStory p:first-of-type,
+.ourServices p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.ourStory button {
+  margin-top: 8%;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+}
+.ourServices {
+  text-align: center;
+  padding: 30px;
+}
+.buttonForm {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.buttomContainer {
+  flex: 0 1 20%;
+  position: relative;
+  background-image: url(assets/images.jfif);
+  background-size: cover;
+  border: 1px solid white;
+  box-shadow: 1px 1px 5px 1px white;
+}
+.buttomContainer:hover button {
+  visibility: inherit;
+}
+.buttomContainer button {
+  height: 150px;
+  width: 200px;
+  margin: 10px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  visibility: hidden;
+}
+.buttomContainer label {
+  position: absolute;
+  top: 110%;
+  left: 33%;
+}
+.GridList {
+  height: auto;
+}
+.Grid {
+  display: flex;
+  margin: 30px auto;
+  justify-content: center;
+}
+.Column {
+  display: flex;
+  flex: 0 1 30%;
+  flex-wrap: wrap;
+  background-color: black;
+  border: 1px solid white;
+}
+.Row {
+  border: 1px solid white;
+  flex-basis: 100%;
+  background-image: url(assets/images.jfif);
+  background-size: cover;
+  height: 50%;
+}
+.Row img {
+  object-fit: cover;
+}
+.Row h3 {
+  margin-top: 10%;
+}
+.Column .Row p {
+  margin-top: 0px;
+}
+.Row form {
+  margin-bottom: 5%;
+}
+.Row form input {
+  display: inline-block;
+  height: 38px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.ordering {
+  background: linear-gradient(
+    to left,
+    rgba(252, 4, 4, 0.8),
+    rgba(151, 2, 2, 0.6),
+    rgba(27, 1, 1, 0.4)
+  );
+  padding: 100px 10px;
+  text-align: center;
+}
+
+.ordering h3 {
+  color: red;
+  font-size: 25px;
+}
+
+.ordering h2 {
+  font-size: 20px;
+}
+
+.ordering .items {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.ordering .item {
+  flex: 1;
+  max-width: 211px;
+  margin: 0 30px;
+  background-color: rgb(245, 221, 4);
+  padding: 14px 15px;
+  vertical-align: middle;
+  box-shadow: 6px 6px 10px rgb(112, 4, 4);
+}
+
+.ordering .item:last-of-type {
+  background-color: red;
+  transition: all 0.5s ease-in-out;
+}
+
+.ordering .item:last-of-type:hover {
+  cursor: pointer;
+  background-color: rgb(150, 4, 4);
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  min-height: 40vh;
+  position: relative;
+  padding: 50px 0 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+footer h2 {
+  color: blue;
+  margin-bottom: 20px;
+}
+
+footer img {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+.d-flex {
+  display: flex;
+}
+
+footer .fcolumn {
+  flex: 1;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0 10px;
+}
+
+footer .made-by {
+  margin-top: auto;
+  width: 100%;
+  border-top: 2px solid #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+footer .made-by span {
+  color: blue;
+}

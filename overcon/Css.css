@@ -1,0 +1,288 @@
+*
+{
+    margin: 0;
+    font-family:sans-serif;
+}
+main 
+{
+    display: flex;
+}
+.definition
+{ flex-basis: 37%
+    
+ 
+   
+    height: 800px;
+   
+}
+
+.definition nav ul,footer ul
+{
+    padding: 15px;
+}
+
+ nav ul li
+{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+}
+ nav ul li:first-child a:after
+{
+   content: "MISSION" 
+}
+ nav ul li .doit:after
+{
+    content: ".";
+    visibility: hidden;
+}
+nav ul li:last-child a:after
+{
+    content: "US"
+}
+nav ul li a
+{  
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    padding: 10px 4px 20px ;
+    color:dimgray;
+    text-decoration: none;
+    
+}
+
+
+ nav ul li a:hover
+{   color: white;
+    background-color: blue;
+}
+
+
+.definition h1
+{
+    font-size: 80px;
+    margin: 200px 70px 100px;
+   color:rgb(66, 62, 206);
+    
+}
+.definition p 
+{
+    margin: 0 10px;
+    font-size:25px;
+    font-weight: bold;
+}
+.definition p span
+{
+    text-transform: uppercase;
+    font-weight:bolder;
+}
+.definition p:nth-of-type(2)
+{
+    display: inline-block;
+    width: 420px;
+    color: darkgray;
+    font-size: 15px;
+    text-align: center;
+
+}
+.definition input
+{
+    border-radius: 20px;
+    border-style: none;
+    margin: 40px 180px;
+    padding: 10px 50px;
+    background: blue;
+    color: white;
+    
+}
+
+.toRead
+{
+
+  
+   flex-basis: 63%;
+    position: relative;
+   
+    height: 800px;
+    background: linear-gradient(to right,rgb(99,129,208),rgb(61,128,224),rgb(66, 62, 206));
+}
+.toRead input,footer input
+{
+    position: absolute;
+    right: 0;
+    border-radius: 20px;
+    border-style: none;
+    margin: 20px;
+    padding: 10px 50px;
+    background: blue;
+    color: white;
+    
+}
+.toRead .label
+{
+    position: absolute;
+    right: 220px;
+    color: white;
+    margin-top: 30px;
+    
+}
+.toRead .label:first-letter
+{
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+}
+.toRead div
+{
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    top: 20%;
+    left: 25%;
+    background-color: white;
+}
+.toRead div p:first-letter
+{
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+}
+.toRead div p
+{
+    
+    font-weight:550;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.toRead div img
+{   
+    margin-top: 30px;
+}
+.toRead div aside
+{
+   float: right;
+    margin: 40px 30px 0 0;
+     color: darkgray;
+}
+.toRead div .arrow
+{
+    float: right;
+    margin: -100px 40px 0 0;
+}
+.body .forInformation
+{
+    height:622px;
+    background-image: url(images/section2Background.png);
+    
+    
+}
+.body .forInformation h2
+{   margin: 0 0 50px;
+    padding: 100px 0 0;
+    text-align: center;
+    text-transform:capitalize;
+    
+}
+.body .forInformation p
+{
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+    margin-left: 400px;
+    line-height: 20px;
+    color:darkslategray;
+}
+.body .forInformation input
+{
+     border-radius: 20px;
+    border-style: none;
+    margin: 60px 550px;
+    padding: 10px 50px;
+    background: blue;
+    color: white;
+    
+}
+.body .forFuture
+{   height: 700px;
+    background-image: url(images/section3Background.png);
+    background-color:#0044f9;
+}
+.body .forFuture h2
+{
+    margin: 0 0 50px;
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+}
+.body .forFuture h2:first-letter
+{
+    text-transform: capitalize;
+}
+.body .forFuture p
+{
+    margin-left: 30%;
+    color: white;
+}
+.body .forFuture li
+{
+    display: inline-block;
+    list-style-type: none;
+    margin: 100px 0 120px 50px;
+}
+.body .forFuture li:first-child
+{
+  margin-left: 25%;  
+}
+.body .forFuture button
+{
+   
+     border-radius: 20px;
+    border-style: none;
+    margin-left: 40%;
+    padding: 10px 40px;
+    text-transform:uppercase;
+    font-weight: 700;
+    
+    background-color:#33a23f;
+    color: white; 
+}
+footer
+{
+    height: 150px;
+    position: relative;
+}
+footer nav ul li:first-child
+{
+    margin-left: 100px;
+}
+footer input
+{
+    margin: -80px 100px;
+}
+footer ul li
+{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+footer ul li p 
+{
+   margin:0 300px 0 20px;
+    color: darkgray;
+    
+}
+footer ul li:first-child p
+{
+   margin:0 0 0 100px;
+}
+
+footer ul li a 
+{   text-decoration: none;
+    color: darkgray;
+    margin-left: 10px;
+    
+}
+nav ul li a
+{
+    color: dimgray;
+}
